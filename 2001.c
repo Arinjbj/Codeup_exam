@@ -14,7 +14,6 @@ int main()
 		scanf("%d", &juice);
 		if(jmin > juice) jmin = juice;
 	}
-	printf("%d %d\n", pmin, jmin);
 	printf("%.1lf", (double)(pmin + jmin) * 1.1);
 	return 0;
 }
