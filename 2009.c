@@ -8,6 +8,7 @@ int main()
 	{
 		a -= b;
 		if(a < 0) break;
+		a++;
 	}
 	printf("%d", i);
 	return 0;
