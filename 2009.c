@@ -9,5 +9,6 @@ int main()
 		a -= b;
 		if(a <= 0) break;
 	}
+	printf("%d", i);
 	return 0;
 }
