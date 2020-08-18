@@ -7,7 +7,7 @@ int main()
 	for(i = 0;;i++)
 	{
 		a -= b;
-		if(a <= 0) break;
+		if(a < 0) break;
 	}
 	printf("%d", i);
 	return 0;
