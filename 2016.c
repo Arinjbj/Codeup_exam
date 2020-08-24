@@ -25,7 +25,6 @@ int main()
 		}
 	}
 	free(num);
-	printf("%s\n", result);
 	for(j = strlen(result) - 1;j >= 0;j--)
 	{
 		printf("%c", result[j]);
