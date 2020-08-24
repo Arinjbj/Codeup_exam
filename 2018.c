@@ -1,10 +1,10 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 
 #define LEN 1600
 
 int main()
 {
-	int arr[LEN] = {1}, temp[LEN] = {}, kind, cnt, a, z, i, j, k;
+	int arr[LEN] = {1}, temp[LEN] = {}, kind, cnt = 0, a, z, i, j, k;
 	scanf("%d %d", &a, &z);
 	a--;
 	z--;
@@ -13,6 +13,10 @@ int main()
 		if(i == 0 && a == 0)
 		{
 			printf("%d\n", arr[i]);
+			continue;
+		}
+		else if(i == 0)
+		{
 			continue;
 		}
 		for(j = 0,k = 0;arr[j] != 0;j++)
