@@ -28,9 +28,9 @@ int main()
 			check0 = 1;
 		}
 		if(num[i] != 0 && len % 4 != 0) printf("%c%c%c", unit[(len % 4 - 1) * 3], unit[(len % 4 - 1) * 3 + 1], unit[(len % 4 - 1) * 3 + 2]);
-		else if(len4 != 0 && len % 4 == 0 && check0 != 0) 
+		else if(len4 != 0 && len % 4 == 0) 
 		{
-			printf("%c%c%c", unit4[(len4 - 1) * 3], unit4[(len4 - 1) * 3 + 1], unit4[(len4 - 1) * 3 + 2]);
+			if(check0 != 0) printf("%c%c%c", unit4[(len4 - 1) * 3], unit4[(len4 - 1) * 3 + 1], unit4[(len4 - 1) * 3 + 2]);
 			len4--;
 			check0 = 0;
 		}
