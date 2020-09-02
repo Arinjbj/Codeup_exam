@@ -13,7 +13,7 @@ int main()
 		cnt = 0;
 		for(int i = 1; i * i < sum; i++) if(sum % i == 0) cnt += 2;	
 		if(i * i == sum) cnt++;
-		if(cnt >= n) break;
+		if(cnt > n) break;
 	}
 	printf("%d", sum);
 	return 0;
