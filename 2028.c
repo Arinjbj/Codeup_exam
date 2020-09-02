@@ -10,8 +10,8 @@ int main()
 		tri++;
 		sum = 0;
 		for(int i = 1; i <= tri; i++) sum += i;
-		cnt = 2;
-		for(int i = 2; i * i < sum; i++) if(sum % i == 0) cnt += 2;	
+		cnt = 0;
+		for(int i = 1; i * i < sum; i++) if(sum % i == 0) cnt += 2;	
 		if(i * i == sum) cnt++;
 		if(cnt >= n) break;
 	}
