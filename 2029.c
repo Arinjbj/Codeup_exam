@@ -2,8 +2,8 @@
 
 int main()
 {
-	int arr[1000] = {1, 1};
-	int result[1000] = {1, 1};
+	int arr[1000000] = {1, 1};
+	int result[1000000] = {1, 1};
 	int m, n, aloc, rloc;
 
 	scanf("%d %d", &m, &n);
