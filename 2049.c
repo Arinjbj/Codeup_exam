@@ -2,8 +2,8 @@
 
 int main()
 {
-	int board[4][4] = {};
-	int isend;
+	int board[4][4] = {}, tempboard[4][4] = {};
+	int isend, i = 0;
 	for (int i = 0; i < 4; ++i)
 	{
 		for (int j = 0; j < 4; ++j)
@@ -11,6 +11,7 @@ int main()
 			scanf("%d", &board[i][j]);
 		}
 	}
+	//방향으로 모두 변환
 	for (int i = 0; i < 3; ++i)
 	{
 		for (int j = 0; j < 4; ++j)
@@ -39,6 +40,7 @@ int main()
 			}
 		}
 	}
+	//방향으로 정리
 	for (int i = 0; i < 4; ++i)
 	{
 		for (int j = 0; j < 4; ++j)
